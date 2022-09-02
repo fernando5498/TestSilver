@@ -4,4 +4,19 @@
 /* --------------------- COMPONENTES -------------------- */
 
 @forward "4-componets/header";
+@forward "4-componets/redes";
+@forward "4-componets/buttons";
+@forward "4-componets/form";
+@forward "4-componets/sub-heading";
+@forward "4-componets/card-curse";
+@forward "4-componets/gallery";
+@forward "4-componets/team-cads";
 @forward "4-componets/footer";
+
+/* ----------------------- HELPERS ---------------------- */
+
+@forward "3-helpers/class";
+
+/* ------------------------ PAGE ------------------------ */
+
+@forward "5-page/home";

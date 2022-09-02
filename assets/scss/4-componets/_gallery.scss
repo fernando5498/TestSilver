@@ -1,0 +1,55 @@
+@use "../2-mixins/filter" as filt;
+@use "../1-base/variable" as var;
+@use "../2-mixins/break-points" as breakP;
+.gallery {
+    max-width: 920px;
+    margin: 0 auto;
+    .col {
+        padding: 0;
+    }
+}
+.item-gallery {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    &:hover .item-gallery__img {
+        transform: scale(1.1);
+    }
+    &__img {
+        height: 100%;
+        width: 100%;
+        @include filt.filter-blue;
+        transition: map-get(var.$transition, fast);
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+
+    &__content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        left: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        color: var.$color-white;
+        &__title {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.item-gallery--small {
+    height: 138px;
+    @include breakP.media-queries-down(sm) {
+        height: 300px;
+    }
+}

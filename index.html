@@ -6,26 +6,631 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Universidad</title>
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel='stylesheet' href='assets/css/style.css'>
     <link rel='shortcut icon' href='assets/img/LOGO.png' type='image/x-icon'>
-    <meta name='description'
-        content='¿Buscas estudiar de forma online y con los mejores profesores? Inscribete en nuestra universidad online y se el profesional que todos necesitan'>
+    <meta name='description' content='¿Buscas estudiar de forma online y con los mejores
+            profesores? Inscribete en nuestra universidad online y se el
+            profesional que todos necesitan'>
     <meta name='theme-color' content='#00000'>
-    <meta name='keywords' content='universidad, cursos, profesionales, estudios, capacitaciones'>
+    <meta name='keywords' content='universidad, cursos, profesionales,
+            estudios, capacitaciones'>
     <meta name='Author' lang='es' content='Raul Pineda'>
     <meta name='copyright' content='https://raulfetch.herokuapp.com/'>
 </head>
 
 <body class='body'>
-    <header class='header'>
+    <header class='header' id="header">
+        <div class="top-header py-1">
+            <div class="container d-flex align-items-center
+                    justify-content-between">
+
+                <div class="top-header__contact d-flex">
+                    <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"
+                        class="top-header__contact__item">
+                        <i class="mr-1 fa-solid fa-phone"></i>
+                        <span class="d-none d-sm-inline-block">123 456 789</span>
+                    </a>
+                    <a href="https://mail.google.com/mail" target="_blank" rel="noopener noreferrer"
+                        class="ml-0 ml-md-5 top-header__contact__item">
+                        <i class="mr-1 fa-solid fa-envelope"></i>
+                        <span class="d-none d-sm-inline-block">info@email.com</span>
+                    </a>
+                </div>
+
+                <div class="redes">
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- navbar  -->
+        <div class="navbar-r py-2">
+            <div class="container d-flex align-items-center
+                    justify-content-between">
+                <div class="navbar-r__img">
+                    <a href="#hero" rel="noopener noreferrer">
+                        <img class="logo" src='assets/img/LOGO.png' alt='logo' loading='lazy'>
+                    </a>
+                </div>
+
+
+                <ul class="nav-r " id="nav-r">
+                    <div class="close-menu d-flex d-md-none" id="close-menu"><i class="fa-solid fa-xmark"></i></div>
+                    <li class="nav-r__link">
+                        <a data-link="about" href="#" rel="noopener
+                                noreferrer">About Us</a>
+                    </li>
+                    <li class="nav-r__link">
+                        <a data-link="carrers" href="#" rel="noopener
+                                noreferrer">Courses</a>
+                    </li>
+                    <li class="nav-r__link">
+                        <a data-link="team" href="#" rel="noopener
+                                noreferrer">Team</a>
+                    </li>
+                    <li class="nav-r__link">
+                        <a data-link="contact" href="#" rel="noopener
+                                noreferrer">Contact Us</a>
+                    </li>
+                </ul>
+
+                <div id="menu-burger" class="menu-burger d-md-none d-block">
+                    <i class="fa-solid fa-bars"></i>
+                    </d>
+                </div>
+            </div>
 
     </header>
 
-    <main class='main'></main>
+    <main class='main'>
+        <!-- ------------------ HERO ------------------- -->
+        <section class="section-hero padding-section" id="hero">
+            <div class="bg-vid">
+                <video autoplay muted loop>
+                    <source src="assets/Videos/hero-video.mp4">
+                </video>
+            </div>
+            <div class="container mt-0 mt-md-5 ">
+                <div class="row mt-0 mt-md-5  text-center text-md-left ">
+                    <div class="my-5 hero-content col-12 col-md-6">
+                        <h1 class="pb-1 hero-content__h1">Welcome a the University</h1>
+                        <div class="my-2 line-text mx-md-0 mx-auto"></div>
+                        <h2 class="mb-4 mb-md-5 hero-content__h2"><strong>We are an online <br> platform to make
+                                learning </strong></h2>
+                        <a class="mx-md-0   mx-auto btn-university btn-university-tall" href="#" target="_blank" rel="noopener
+                                noreferrer">Get Now </a>
+                    </div>
 
-    <footer class='footer'></footer>
+                    <div class="col-12 col-md-6  d-md-block d-none">
+                        <div class=" mx-md-0 mx-auto wrapper-register  ml-md-auto">
+                            <div class="register-title">
+                                <h2>Register Now !</h2>
+                            </div>
 
-    <script src=''></script>
+                            <form class="register-form">
+                                <input class="input-form" type="text" name="name" id="name" placeholder="Name">
+
+                                <div class="d-flex flex-wrap flex-md-nowrap">
+                                    <input class="input-form mr-md-3 mr-0" type="email" name="email" id="email"
+                                        placeholder="Email">
+                                    <input class="input-form" type="tel" name="tel" id="tel" placeholder="Phone">
+                                </div>
+
+                                <input class="input-form" type="text" name="subject" id="subjecr" placeholder="Subject">
+
+                                <textarea class="input-form" name="message" id="message" cols="30" rows="4"
+                                    placeholder="Message"></textarea>
+
+                                <input class="btn-university btn-university-small" type="submit" value="Send">
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="the-most-popular padding-section" id="populate">
+            <div class="container ">
+                <div class="sub-heading">
+                    <h2 class="sub-heading__h2">The most popular</h2>
+                    <div class="line-text"></div>
+                    <h3 class="sub-heading__h3">Know what we Offer you</h3>
+                </div>
+
+                <div class="row my-5 pt-3">
+                    <div class="col-12 mb-4 mb-lg-0 col-sm-6 col-lg-3">
+                        <div class="card-curse">
+                            <div class="card-curse__img"><img src='assets/img/IMAGE-CURSO-1.jpg' alt='ofert-1'
+                                    loading='lazy'></div>
+                            <h4 class="mb-4 card-curse__title">Desing for the web with adobe photoshop</h4>
+                            <a class="mx-auto mb-4 btn-university btn-university-small" href="#" target="_blank"
+                                rel="noopener noreferrer">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mb-4 mb-lg-0 col-sm-6 col-lg-3">
+                        <div class="card-curse">
+                            <div class="card-curse__img"><img src='assets/img/IMAGE-CURSO-2.jpg' alt='ofert-1'
+                                    loading='lazy'></div>
+                            <h4 class="mb-4 card-curse__title">Desing for the web with adobe photoshop</h4>
+                            <a class="mx-auto mb-4 btn-university btn-university-small" href="#" target="_blank"
+                                rel="noopener noreferrer">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mb-4 mb-lg-0 col-sm-6 col-lg-3">
+                        <div class="card-curse">
+                            <div class="card-curse__img"><img src='assets/img/IMAGE-CURSO-3.jpg' alt='ofert-1'
+                                    loading='lazy'></div>
+                            <h4 class="mb-4 card-curse__title">Desing for the web with adobe photoshop</h4>
+                            <a class="mx-auto mb-4 btn-university btn-university-small" href="#" target="_blank"
+                                rel="noopener noreferrer">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mb-4 mb-lg-0 col-sm-6 col-lg-3">
+                        <div class="card-curse">
+                            <div class="card-curse__img"><img src='assets/img/IMAGE-CURSO-4.jpg' alt='ofert-1'
+                                    loading='lazy'></div>
+                            <h4 class="mb-4 card-curse__title">Desing for the web with adobe photoshop</h4>
+                            <a class="mx-auto mb-4 btn-university btn-university-small" href="#" target="_blank"
+                                rel="noopener noreferrer">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <a class="mx-auto btn-university btn-university-medium btn-trasparent" href="#" target="_blank"
+                        rel="noopener noreferrer">View
+                        More</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ---------------- ABOUT US ----------------- -->
+        <section class="about-us padding-section" id="about">
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="sub-heading">
+                            <h2 class="sub-heading__h2">About us</h2>
+                            <div class="line-text"></div>
+                            <h3 class="sub-heading__h3">Know everything we do for you</h3>
+                        </div>
+                        <p class="info-about my-5 ml-4">The university is a physical place, buildings, laboratories,
+                            libraries ...
+                            Where
+                            students and
+                            teachers meet. The university is also a human-social system. that is, a set of elements that
+                            are
+                            related and interact with each other.</p>
+                    </div>
+
+                    <div class="col-12 col-md-6 mb-5 mb-md-0  about-us-img">
+                        <img src='assets/img/IMAGE-ABOUT-US.jpg' alt='nosotros' loading='lazy'>
+                    </div>
+                </div>
+                <div class="row">
+                    <a class="mx-md-0 mx-auto ml-4 btn-university btn-university-medium" href="#" target="_blank"
+                        rel="noopener noreferrer">Read
+                        More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits padding-section d-flex align-items-center">
+            <div class="container">
+                <div class="row ">
+                    <div class=" col-6 col-md-3 mb-md-0 mb-5 ">
+                        <div class="benefits-item">
+                            <div class="benefits-item__img"><img src='assets/img/ICONO-1.png' alt='beneficios'
+                                    loading='lazy'></div>
+                            <h4 class="benefits-item__title">Exllent Content</h4>
+                        </div>
+                    </div>
+
+                    <div class=" col-6 col-md-3 mb-md-0 mb-5 ">
+                        <div class="benefits-item">
+                            <div class="benefits-item__img"><img src='assets/img/ICONO-1.png' alt='beneficios'
+                                    loading='lazy'></div>
+                            <h4 class="benefits-item__title">Exllent Content</h4>
+                        </div>
+                    </div>
+
+                    <div class=" col-6 col-md-3 mb-md-0 mb-5 ">
+                        <div class="benefits-item">
+                            <div class="benefits-item__img"><img src='assets/img/ICONO-1.png' alt='beneficios'
+                                    loading='lazy'></div>
+                            <h4 class="benefits-item__title">Exllent Content</h4>
+                        </div>
+                    </div>
+
+                    <div class=" col-6 col-md-3 mb-md-0 mb-5 ">
+                        <div class="benefits-item">
+                            <div class="benefits-item__img"><img src='assets/img/ICONO-1.png' alt='beneficios'
+                                    loading='lazy'></div>
+                            <h4 class="benefits-item__title">Exllent Content</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- --------------------- GALLERY Careers --------------------- -->
+
+        <section class="study-careers padding-section" id="carrers">
+            <div class="container ">
+                <div class="sub-heading">
+                    <h2 class="sub-heading__h2">Study careers</h2>
+                    <div class="line-text"></div>
+                    <h3 class="sub-heading__h3">Explore the different careers we offer</h3>
+                </div>
+
+                <div class="gallery py-5">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 mb-4 ">
+                            <div class="item-gallery">
+                                <div class="item-gallery__img"><img src='assets/img/IMAGE-CATEGORY-ADMINISTRATION.jpg'
+                                        alt='administración' loading='lazy'></div>
+                                <div class="item-gallery__content">
+                                    <h4 class="item-gallery__content__title">Administración</h4>
+                                    <a class="btn-university btn-university-extra-small" href="#">Explore</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4 mb-4 ">
+                            <div class="item-gallery">
+                                <div class="item-gallery__img"><img src='assets/img/IMAGE-CATEGORY-ACCOUNTING.jpg'
+                                        alt='contabilidad' loading='lazy'></div>
+                                <div class="item-gallery__content">
+                                    <h4 class="item-gallery__content__title">Accounting</h4>
+                                    <a class="btn-university btn-university-extra-small" href="#">Explore</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 ">
+
+                            <div class="mb-4 item-gallery item-gallery--small">
+                                <div class="item-gallery__img"><img src='assets/img/IMAGE-CATEGORY-MATHEMATICS.jpg'
+                                        alt='matematicas' loading='lazy'></div>
+                                <div class="item-gallery__content">
+                                    <h4 class="item-gallery__content__title">Mathematics</h4>
+                                    <a class="btn-university btn-university-extra-small" href="#">Explore</a>
+                                </div>
+                            </div>
+
+                            <div class="mb-4 item-gallery item-gallery--small">
+                                <div class="item-gallery__img"><img src='assets/img/IMAGE-CATEGORY-PROGRAMMING.jpg'
+                                        alt='Programaciòn' loading='lazy'></div>
+                                <div class="item-gallery__content">
+                                    <h4 class="item-gallery__content__title">Programming</h4>
+                                    <a class="btn-university btn-university-extra-small" href="#">Explore</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-8 mb-4 ">
+                            <div class="item-gallery item-gallery--small">
+                                <div class="item-gallery__img"><img src='assets/img/IMAGE-CATEGORY-ARCHITECTURE.jpg'
+                                        alt='arquitectura' loading='lazy'></div>
+                                <div class="item-gallery__content">
+                                    <h4 class="item-gallery__content__title">Architecture</h4>
+                                    <a class="btn-university btn-university-extra-small" href="#">Explore</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4 mb-4 ">
+                            <div class="item-gallery item-gallery--small">
+                                <div class="item-gallery__img"><img src='assets/img/IMAGE-CATEGORY-BIOLOGY.jpg'
+                                        alt='biologia' loading='lazy'></div>
+                                <div class="item-gallery__content">
+                                    <h4 class="item-gallery__content__title">Biology</h4>
+                                    <a class="btn-university btn-university-extra-small" href="#">Explore</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="row">
+                    <a class="mx-auto btn-university btn-university-medium btn-trasparent" href="#" target="_blank"
+                        rel="noopener noreferrer">View
+                        More</a>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- ---------------- OUR TEAM ----------------- -->
+        <section class="our-team padding-section" id="team">
+            <div class="container">
+                <div class="sub-heading">
+                    <h2 class="sub-heading__h2">Our Team</h2>
+                    <div class="line-text"></div>
+                    <h3 class="sub-heading__h3">Meet the best professionals</h3>
+                </div>
+                <div class="row carrusel-team my-5">
+
+
+
+                    <div class="owl-carousel owl-theme">
+
+                        <div class="item col">
+                            <div class="card-team">
+                                <div class="card-team__head">
+                                </div>
+                                <div class="card-team__body">
+                                    <div class="card-team__body__img">
+                                        <img class="w-100" src='assets/img/IMAGE-TEAM-1.jpg' alt='Jhon Smith'
+                                            loading='lazy'>
+                                    </div>
+                                    <h4 class="card-team__body__name">Jhon Smith <br> <span>Math Teacher</span></h4>
+                                    <a class=" mx-auto btn-university btn-university-extra-small btn-trasparent"
+                                        href="#">Read
+                                        More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item col">
+                            <div class="card-team">
+                                <div class="card-team__head">
+                                </div>
+                                <div class="card-team__body">
+                                    <div class="card-team__body__img">
+                                        <img class="w-100" src='assets/img/IMAGE-TEAM-2.jpg' alt='Dave Morgan'
+                                            loading='lazy'>
+                                    </div>
+                                    <h4 class="card-team__body__name">Dave Morgan <br> <span>Math Teacher</span></h4>
+                                    <a class=" mx-auto btn-university btn-university-extra-small btn-trasparent"
+                                        href="#">Read
+                                        More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item col">
+                            <div class="card-team">
+                                <div class="card-team__head">
+                                </div>
+                                <div class="card-team__body">
+                                    <div class="card-team__body__img">
+                                        <img class="w-100" src='assets/img/IMAGE-TEAM-3.jpg' alt='Jimena Soto'
+                                            loading='lazy'>
+                                    </div>
+                                    <h4 class="card-team__body__name">Jimena Soto <br> <span>Math Teacher</span></h4>
+                                    <a class=" mx-auto btn-university btn-university-extra-small btn-trasparent"
+                                        href="#">Read
+                                        More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item col">
+                            <div class="card-team">
+                                <div class="card-team__head">
+                                </div>
+                                <div class="card-team__body">
+                                    <div class="card-team__body__img">
+                                        <img class="w-100" src='assets/img/IMAGE-TEAM-4.jpg' alt='Zara Smith'
+                                            loading='lazy'>
+                                    </div>
+                                    <h4 class="card-team__body__name">Zara Smith <br> <span>Biology Teacher</span></h4>
+                                    <a class=" mx-auto btn-university btn-university-extra-small btn-trasparent"
+                                        href="#">Read
+                                        More</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <a class="btn-university btn-university-medium mx-auto" href="#" target="_blank"
+                        rel="noopener noreferrer">View More</a>
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <!-- ----------------- REVIEWS ----------------- -->
+
+        <section class="reviews padding-section" id="contact">
+            <div class="container ">
+                <div class="row testimonials">
+                    <div class="col-12 col-md-6">
+                        <h2 class="testimonials-h2">View Testimonials</h2>
+                        <h3 class="testimonials-h3">FOR US IT IS VERY IMPORTANT TO KNOW THE OPINIONS OF OUR CLIENTS</h3>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img data-name="Carlos Salas" data-vid="assets/Videos/review-1.mp4"
+                                        src="assets/img/person_1.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-item-play"></div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img data-name="Sofia Gutierrez" data-vid="assets/Videos/review-1.mp4"
+                                        src="assets/img/person_2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img data-name="Karla Lopez" data-vid="assets/Videos/review-1.mp4"
+                                        src="assets/img/person_3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img data-name="JEFF FRESHMAN" data-vid="assets/Videos/review-1.mp4"
+                                        src="assets/img/person_4.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img data-name="Estefany Gonzalez" data-vid="assets/Videos/review-1.mp4"
+                                        src="assets/img/person_5.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+
+                            <div class="carousel-user">
+                                <p class="m-0">JEFF FRESHMAN</p>
+                            </div>
+
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                            </ol>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="mt-5 col-12 col-md-6  d-md-none d-block">
+                    <div class=" mx-md-0 mx-auto wrapper-register  ml-md-auto">
+                        <div class="register-title">
+                            <h2>Register Now !</h2>
+                        </div>
+
+                        <form class="register-form">
+                            <input class="input-form" type="text" name="name" id="name" placeholder="Name">
+
+                            <div class="d-flex flex-wrap flex-md-nowrap">
+                                <input class="input-form mr-md-3 mr-0" type="email" name="email" id="email"
+                                    placeholder="Email">
+                                <input class="input-form" type="tel" name="tel" id="tel" placeholder="Phone">
+                            </div>
+
+                            <input class="input-form" type="text" name="subject" id="subjecr" placeholder="Subject">
+
+                            <textarea class="input-form" name="message" id="message" cols="30" rows="4"
+                                placeholder="Message"></textarea>
+
+                            <input class="btn-university btn-university-small" type="submit" value="Send">
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class='footer'>
+        <div class="container">
+            <div class="row ">
+                <div
+                    class="mb-4 col-12 col-sm-6 col-lg-3   d-flex align-items-center justify-content-center justify-content-sm-start">
+                    <a href="https://silveraenterprises.com/" target="_blank"><img width="140px"
+                            src='assets/img/LOGO.png' alt='logo' loading='lazy'></a>
+                </div>
+                <div class="mb-4 text-center text-sm-left col-12 col-sm-6 col-lg-3  ">
+                    <h4 class="sub-title-footer">Quick Links</h4>
+                    <ul class="list-footer">
+                        <li><a href="#about" rel="noopener noreferrer">About Us</a> </li>
+                        <li><a href="#carrers" rel="noopener noreferrer">Courses</a></li>
+                        <li><a href="#populate" rel="noopener noreferrer">Learn</a> </li>
+                        <li><a href="#contact" rel="noopener noreferrer">Contact Us</a> </li>
+                    </ul>
+                </div>
+
+                <div class="mb-4 text-center text-sm-left col-12 col-sm-6 col-lg-3  ">
+                    <h4 class="sub-title-footer">Contact Info</h4>
+                    <ul class="list-footer">
+                        <li>
+                            <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"><i
+                                    class="mr-1 fa-solid fa-phone">
+                                </i>123 456 789
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://mail.google.com/mail/" target="_blank" rel="noopener noreferrer"><i
+                                    class="mr-1 fa-solid fa-envelope"></i> info@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="https://goo.gl/maps/wdSLdz2M1UTzeadk7" target="_blank" rel="noopener noreferrer"><i
+                                    class="fa-sharp fa-solid fa-location-dot"></i> address, United I states</a>
+                        </li>
+                        <div class="redes justify-content-center justify-content-sm-start">
+                            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="mb-4 text-center text-sm-left col-12 col-sm-6 col-lg-3  ">
+                    <h4 class="sub-title-footer">NewsLetter</h4>
+                    <p>Receive all our promotions and notifications</p>
+                    <div class="mx-auto mx-sm-0 footer-submit-email">
+                        <input type="email" name="email-footer" id="email-footer">
+                        <input class="btn-university btn-university-extra-small " type="submit" value="Submit">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row my-3"></div>
+
+            <div class="text-center text-sm-left row pt-2 footer-copyright">
+                <div class=" col-md-10">
+                    <p>&copy; Copyright University . All Rights Reserved <br> This Website Was Designed And Developed by
+                        Josesilvera.com</p>
+                </div>
+                <div class=" col-md-2">
+                    <img width="90px" src='assets/img/logo-Silvera-Enterprises.png' alt='silvera' loading='lazy'>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+    </script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src='assets/js/menu.js'></script>
+
 </body>
 
 </html>

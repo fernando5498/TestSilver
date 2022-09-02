@@ -1,0 +1,14 @@
+@use "../1-base/variable" as var;
+
+.redes {
+    display: flex;
+    gap: 1.6rem;
+    a {
+        font-size: 1.2rem;
+        color: var.$color-white;
+        transition: map-get(var.$transition, fast);
+        &:hover {
+            color: var.$color-secondary;
+        }
+    }
+}

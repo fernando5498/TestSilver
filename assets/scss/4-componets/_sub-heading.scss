@@ -1,0 +1,39 @@
+@use "../1-base/variable" as var;
+@use "../2-mixins/break-points" as breakP;
+.sub-heading {
+    padding-left: 25px;
+    &__h2 {
+        position: relative;
+        font-weight: 500;
+        font-size: 24px;
+        &::after {
+            content: "•";
+            font-size: 2.5rem;
+            color: var.$color-secondary;
+            position: absolute;
+            top: 50%;
+            left: -25px;
+            line-height: 0;
+        }
+    }
+    &__h3 {
+        font-size: 28px;
+        font-weight: 800;
+    }
+    @include breakP.media-queries-down(sm) {
+        text-align: center;
+        padding: 0;
+        &__h2::after {
+            display: none;
+        }
+    }
+}
+.line-text {
+    width: 45%;
+    height: 4px;
+    background: var.$color-secondary;
+    margin-bottom: 9px;
+    @include breakP.media-queries-down(sm) {
+        margin: 0 auto;
+    }
+}

@@ -20,7 +20,7 @@ input {
 
 a {
     text-decoration: none;
-    color: var.$color-white;
+    // color: var.$color-white;
     &:hover {
         text-decoration: none;
         color: inherit;
@@ -47,10 +47,12 @@ body {
 }
 
 input,
+textarea,
 input:focus,
 select:focus,
 textarea:focus,
 button:focus {
+    border: none;
     outline: none;
     outline-width: 0;
     outline-color: transparent;

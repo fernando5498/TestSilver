@@ -1,0 +1,50 @@
+@use "../1-base/variable" as var;
+@use "../2-mixins/filter" as filt;
+
+.carrusel-team {
+    max-width: 1020px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.card-team {
+    width: 200px;
+    min-height: 270px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 30% 70%;
+    margin: 0 auto;
+    &__head {
+        position: relative;
+        background: url(../img/IMAGE-BACKGROUND-CARD-TEAM-3.jpg) center no-repeat;
+        background-size: cover;
+        @include filt.filter-blue;
+    }
+    &__body {
+        padding: 55px 10px 25px 10px;
+        text-align: center;
+        font-size: 1.125rem;
+        color: var.$color-primary-dark;
+        font-weight: 600;
+        background: var.$color-white;
+        position: relative;
+        &__img {
+            position: absolute;
+            top: -45px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 3px solid var.$color-white;
+            overflow: hidden;
+        }
+        &__name {
+            margin-bottom: 20px;
+            span {
+                color: var.$color-secondary;
+            }
+        }
+    }
+}

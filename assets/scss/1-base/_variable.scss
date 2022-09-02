@@ -3,13 +3,14 @@
 $color-primary: #02557d;
 $color-primary-dark: #08364e;
 $color-secondary: #ffb749;
-$color-tertiary: #e5e5e5;
+$color-secondary-dark: #e4aa56;
+$color-tertiary: #efefef;
 $color-white: white;
 
-/* ---------------------- TRANSFOR ---------------------- */
+/* ---------------------- TRANSition ---------------------- */
 
-$transform: (
-    fast: 300ms all,
-    medium: 600ms all,
-    slow: 300ms all,
+$transition: (
+    fast: all 300ms,
+    medium: all 600ms,
+    slow: all 300ms,
 );

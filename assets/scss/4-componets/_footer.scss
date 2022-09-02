@@ -1,0 +1,42 @@
+@use "../1-base/variable" as var;
+.footer {
+    background-color: #014769;
+    color: var.$color-white;
+    padding: 55px 35px 44px 35px;
+    a {
+        transition: map-get(var.$transition, fast);
+        color: var.$color-white;
+        &:hover {
+            color: var.$color-secondary;
+        }
+    }
+}
+
+.sub-title-footer {
+    font-weight: 700;
+    color: var.$color-secondary-dark;
+    margin-bottom: 35px;
+}
+.list-footer {
+    li {
+        margin-bottom: 20px;
+    }
+}
+
+.footer-submit-email {
+    background-color: var.$color-white;
+    display: flex;
+    overflow: hidden;
+    border: 2px solid var.$color-white;
+    border-radius: 50px;
+    max-width: 220px;
+    input[type="email"] {
+        padding: 0px 10px;
+        color: #828282;
+        width: 100%;
+    }
+}
+
+.footer-copyright {
+    border-top: 1px solid var.$color-white;
+}

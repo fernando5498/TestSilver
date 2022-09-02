@@ -1,0 +1,13 @@
+@use "../1-base/variable" as var;
+@mixin filter-blue {
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: var.$color-primary;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+    }
+}
