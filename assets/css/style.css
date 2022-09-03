@@ -499,7 +499,7 @@ button:focus {
 }
 
 .modal-img {
-  width: min(500px, 80%);
+  width: min(500px, 100%);
 }
 
 .close-modal {
