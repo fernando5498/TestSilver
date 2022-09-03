@@ -209,6 +209,9 @@ button:focus {
   background: white;
   color: #ffb749;
 }
+.btn-university:focus, .btn-university-tall:focus {
+  border: 2px solid white;
+}
 .btn-university img, .btn-university-tall img,
 .btn-university svg,
 .btn-university-tall svg {
@@ -245,11 +248,14 @@ button:focus {
 .btn-trasparent {
   background: transparent;
   color: #ffb749;
-  border: 3px solid #ffb749;
+  border: 2px solid #ffb749;
 }
 .btn-trasparent:hover {
   background: #ffb749;
   color: white;
+}
+.btn-trasparent:focus {
+  border: 2px solid #ffb749;
 }
 
 .wrapper-register {
