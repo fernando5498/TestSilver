@@ -14,6 +14,9 @@
     &.active {
         left: 0;
     }
+    @include breakP.media-queries-down(md) {
+        overflow-y: scroll;
+    }
 }
 .modal-img {
     width: min(500px, 100%);
@@ -50,6 +53,9 @@
     z-index: 20;
     &.active {
         right: 0;
+    }
+    @include breakP.media-queries-down(md) {
+        overflow-y: scroll;
     }
 }
 .modal-gallery-img {

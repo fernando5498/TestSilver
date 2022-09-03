@@ -492,6 +492,11 @@ button:focus {
 .modal-content-r.active {
   left: 0;
 }
+@media screen and (max-width: 768px) {
+  .modal-content-r {
+    overflow-y: scroll;
+  }
+}
 
 .modal-img {
   width: min(500px, 100%);
@@ -532,6 +537,11 @@ button:focus {
 }
 .modal-gallery-r.active {
   right: 0;
+}
+@media screen and (max-width: 768px) {
+  .modal-gallery-r {
+    overflow-y: scroll;
+  }
 }
 
 .modal-gallery-img {
