@@ -91,9 +91,11 @@ $('.owl-carousel').owlCarousel({
 
 let btnOffert = document.querySelectorAll('.btn-offert')
 let btnTeam = document.querySelectorAll('.btn-team')
+let btnGallery = document.querySelectorAll('.btn-gallery')
 
 btnOffert.forEach(btn => {
     btn.addEventListener('click', () => {
+        document.querySelector('body').style.overflowY = "hidden"
         let img = btn.parentNode.children[0].firstChild.src
         console.log(img);
         document.querySelector('.modal-content-r').classList.add('active')
@@ -103,6 +105,7 @@ btnOffert.forEach(btn => {
 
 btnTeam.forEach(btn => {
     btn.addEventListener('click', () => {
+        document.querySelector('body').style.overflowY = "hidden"
         let img = btn.parentNode.children[0].children[0].src
         console.log(img);
         document.querySelector('.modal-content-r').classList.add('active')
@@ -110,7 +113,38 @@ btnTeam.forEach(btn => {
     })
 })
 
+btnGallery.forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelector('body').style.overflowY = "hidden"
+        let img = btn.parentNode.parentNode.children[0].firstChild.src
+        console.log(img);
+        document.querySelector('.modal-gallery-r').classList.add('active')
+        document.querySelector('.modal-gallery-img').children[0].src = img
+
+    })
+})
+
+
+let itemReview = document.querySelectorAll('.carousel-item')
+let bgVidPreview = document.querySelector('.modal-vid')
+
+bgVidPreview.addEventListener('click', (e) => {
+    if (e.target.classList.contains('modal-vid')) {
+        bgVidPreview.classList.remove('active')
+        document.querySelector('.video').pause()
+    }
+})
+
+itemReview.forEach(item => {
+    item.addEventListener('click', () => {
+        let video = item.dataset.vid
+        document.querySelector('.modal-vid').classList.add('active')
+        document.querySelector('.video').src = video
+    })
+})
 
 function closeModal() {
+    document.querySelector('body').style.overflowY = "scroll"
     document.querySelector('.modal-content-r').classList.remove('active')
+    document.querySelector('.modal-gallery-r').classList.remove('active')
 }

@@ -1,4 +1,5 @@
 @use "../1-base/variable" as var;
+@use "../2-mixins/break-points" as breakP;
 
 .modal-content-r {
     width: 100%;
@@ -25,7 +26,64 @@
     right: 50px;
     background: transparent;
     border: none;
+    z-index: 1;
     &:hover {
         color: var.$color-secondary;
+    }
+    @include breakP.media-queries-down(sm) {
+        top: 20px;
+        right: 20px;
+    }
+}
+.close-modal--white {
+    color: var.$color-white;
+}
+
+.modal-gallery-r {
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    background: white;
+    right: -150%;
+    transition: all 600ms;
+    top: 0;
+    z-index: 20;
+    &.active {
+        right: 0;
+    }
+}
+.modal-gallery-img {
+    width: 100%;
+    height: clamp(250px, 25vh, 500px);
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: 0% 10%;
+    }
+}
+.modal-gallery-content {
+    padding: 50px;
+}
+
+/* --------------------- .MODAL VID --------------------- */
+
+.modal-vid {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 150%;
+    transition: all 600ms;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.466);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    video {
+        width: clamp(500px, 50vw, 700px);
+    }
+    &.active {
+        top: 0;
     }
 }

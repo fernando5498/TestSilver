@@ -34,6 +34,18 @@ ul {
   margin: 0;
 }
 
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #02557d;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #c2d2e4;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -66,7 +78,7 @@ button:focus {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 20;
+  z-index: 4;
 }
 .header.active .top-header {
   background-color: white;
@@ -486,9 +498,70 @@ button:focus {
   right: 50px;
   background: transparent;
   border: none;
+  z-index: 1;
 }
 .close-modal:hover {
   color: #ffb749;
+}
+@media screen and (max-width: 576px) {
+  .close-modal {
+    top: 20px;
+    right: 20px;
+  }
+}
+
+.close-modal--white {
+  color: white;
+}
+
+.modal-gallery-r {
+  width: 100%;
+  position: fixed;
+  height: 100%;
+  background: white;
+  right: -150%;
+  transition: all 600ms;
+  top: 0;
+  z-index: 20;
+}
+.modal-gallery-r.active {
+  right: 0;
+}
+
+.modal-gallery-img {
+  width: 100%;
+  height: clamp(250px, 25vh, 500px);
+}
+.modal-gallery-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 0% 10%;
+}
+
+.modal-gallery-content {
+  padding: 50px;
+}
+
+/* --------------------- .MODAL VID --------------------- */
+.modal-vid {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 150%;
+  transition: all 600ms;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.466);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.modal-vid video {
+  width: clamp(500px, 50vw, 700px);
+}
+.modal-vid.active {
+  top: 0;
 }
 
 .footer {
@@ -754,47 +827,10 @@ button:focus {
   opacity: 0.5;
 }
 
-.carousel-item-play {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 65px;
-  height: 65px;
-  border-radius: 50%;
-  background: #d5562b;
-  animation: vidPlay 2s ease-in-out infinite;
-}
-.carousel-item-play::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 40%;
-  transform: translateY(-50%);
-  width: 0;
-  height: 0;
-  border-left: 20px solid #ffffff;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
+.carousel-indicators {
+  z-index: 2;
 }
 
-@keyframes vidPlay {
-  0% {
-    width: 65px;
-    height: 65px;
-    box-shadow: 0px 0px 0px 0px #d5552b4d;
-  }
-  50% {
-    box-shadow: 0px 0px 10px 0px #d5552b4d;
-    width: 70px;
-    height: 70px;
-  }
-  100% {
-    width: 65px;
-    height: 65px;
-    box-shadow: 0px 0px 20px 40px #d5552b07;
-  }
-}
 /* ------------------------ BASE ------------------------ */
 /* --------------------- COMPONENTES -------------------- */
 /* ----------------------- HELPERS ---------------------- */
