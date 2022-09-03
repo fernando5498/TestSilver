@@ -98,6 +98,25 @@
 
     </header>
 
+    <div class="modal-content-r">
+        <div class="contaner h-100">
+            <div class="row align-items-center h-100">
+                <button onclick="closeModal()" class="close-modal"><i class="fa-solid fa-xmark"></i></button>
+                <div class="col-12 col-md-6">
+                    <h2>Titulo</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At eveniet, nihil illo deleniti expedita
+                        tempora eius tempore dolores, quas molestiae dicta iusto? Repellendus in at beatae sapiente
+                        expedita temporibus libero reiciendis blanditiis aut nobis debitis ex, totam illum ab non
+                        laborum recusandae veniam aperiam quisquam.</p>
+                    <a class="btn-university btn-university-medium" href="#">Explora Más</a>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img class="modal-img mx-auto d-block" src='' alt='' loading='lazy'>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <main class='main'>
         <!-- ------------------ HERO ------------------- -->
         <section class="section-hero padding-section" id="hero">
@@ -161,8 +180,8 @@
                             <div class="card-curse__img"><img src='assets/img/IMAGE-CURSO-1.jpg' alt='ofert-1'
                                     loading='lazy'></div>
                             <h4 class="mb-4 card-curse__title">Desing for the web with adobe photoshop</h4>
-                            <a class="mx-auto mb-4 btn-university btn-university-small" href="#" target="_blank"
-                                rel="noopener noreferrer">Read More</a>
+                            <button class="btn-offert mx-auto mb-4 btn-university btn-university-small">Read
+                                More</button>
                         </div>
                     </div>
 
@@ -171,8 +190,8 @@
                             <div class="card-curse__img"><img src='assets/img/IMAGE-CURSO-2.jpg' alt='ofert-1'
                                     loading='lazy'></div>
                             <h4 class="mb-4 card-curse__title">Desing for the web with adobe photoshop</h4>
-                            <a class="mx-auto mb-4 btn-university btn-university-small" href="#" target="_blank"
-                                rel="noopener noreferrer">Read More</a>
+                            <button class="btn-offert mx-auto mb-4 btn-university btn-university-small">Read
+                                More</button>
                         </div>
                     </div>
 
@@ -181,8 +200,8 @@
                             <div class="card-curse__img"><img src='assets/img/IMAGE-CURSO-3.jpg' alt='ofert-1'
                                     loading='lazy'></div>
                             <h4 class="mb-4 card-curse__title">Desing for the web with adobe photoshop</h4>
-                            <a class="mx-auto mb-4 btn-university btn-university-small" href="#" target="_blank"
-                                rel="noopener noreferrer">Read More</a>
+                            <button class="btn-offert mx-auto mb-4 btn-university btn-university-small">Read
+                                More</button>
                         </div>
                     </div>
 
@@ -191,8 +210,8 @@
                             <div class="card-curse__img"><img src='assets/img/IMAGE-CURSO-4.jpg' alt='ofert-1'
                                     loading='lazy'></div>
                             <h4 class="mb-4 card-curse__title">Desing for the web with adobe photoshop</h4>
-                            <a class="mx-auto mb-4 btn-university btn-university-small" href="#" target="_blank"
-                                rel="noopener noreferrer">Read More</a>
+                            <button class="btn-offert mx-auto mb-4 btn-university btn-university-small">Read
+                                More</button>
                         </div>
                     </div>
                 </div>
@@ -230,12 +249,40 @@
                     </div>
                 </div>
                 <div class="row">
-                    <a class="mx-md-0 mx-auto ml-4 btn-university btn-university-medium" href="#" target="_blank"
-                        rel="noopener noreferrer">Read
-                        More</a>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="mx-auto ml-md-4 btn-university btn-university-medium"
+                        data-toggle="modal" data-target="#exampleModalCenter">
+                        Read
+                        More
+                    </button>
+
                 </div>
             </div>
         </section>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nostrum sit
+                        voluptatem modi adipisci laboriosam quo neque ullam. Natus ut voluptatem tempore
+                        officiis ab iure!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-university btn-university-medium"
+                            data-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <section class="benefits padding-section d-flex align-items-center">
             <div class="container">
@@ -391,9 +438,9 @@
                                             loading='lazy'>
                                     </div>
                                     <h4 class="card-team__body__name">Jhon Smith <br> <span>Math Teacher</span></h4>
-                                    <a class=" mx-auto btn-university btn-university-extra-small btn-trasparent"
-                                        href="#">Read
-                                        More</a>
+                                    <button
+                                        class="btn-team mx-auto btn-university btn-university-extra-small btn-trasparent">Read
+                                        More</button>
                                 </div>
                             </div>
                         </div>
@@ -408,9 +455,9 @@
                                             loading='lazy'>
                                     </div>
                                     <h4 class="card-team__body__name">Dave Morgan <br> <span>Math Teacher</span></h4>
-                                    <a class=" mx-auto btn-university btn-university-extra-small btn-trasparent"
-                                        href="#">Read
-                                        More</a>
+                                    <button
+                                        class="btn-team mx-auto btn-university btn-university-extra-small btn-trasparent">Read
+                                        More</button>
                                 </div>
                             </div>
                         </div>
@@ -425,9 +472,9 @@
                                             loading='lazy'>
                                     </div>
                                     <h4 class="card-team__body__name">Jimena Soto <br> <span>Math Teacher</span></h4>
-                                    <a class=" mx-auto btn-university btn-university-extra-small btn-trasparent"
-                                        href="#">Read
-                                        More</a>
+                                    <button
+                                        class="btn-team mx-auto btn-university btn-university-extra-small btn-trasparent">Read
+                                        More</button>
                                 </div>
                             </div>
                         </div>
@@ -442,9 +489,9 @@
                                             loading='lazy'>
                                     </div>
                                     <h4 class="card-team__body__name">Zara Smith <br> <span>Biology Teacher</span></h4>
-                                    <a class=" mx-auto btn-university btn-university-extra-small btn-trasparent"
-                                        href="#">Read
-                                        More</a>
+                                    <button
+                                        class="btn-team mx-auto btn-university btn-university-extra-small btn-trasparent">Read
+                                        More</button>
                                 </div>
                             </div>
                         </div>
@@ -481,7 +528,7 @@
                                 <div class="carousel-item active">
                                     <img data-name="Carlos Salas" data-vid="assets/Videos/review-1.mp4"
                                         src="assets/img/person_1.jpg" class="d-block w-100" alt="...">
-                                    <div class="carousel-item-play"></div>
+
                                 </div>
                                 <div class="carousel-item">
                                     <img data-name="Sofia Gutierrez" data-vid="assets/Videos/review-1.mp4"
@@ -526,7 +573,7 @@
                             <h2>Register Now !</h2>
                         </div>
 
-                        <form class="register-form">
+                        <form method="post" class="register-form">
                             <input class="input-form" type="text" name="name" id="name" placeholder="Name">
 
                             <div class="d-flex flex-wrap flex-md-nowrap">

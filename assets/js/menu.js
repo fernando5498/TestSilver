@@ -88,3 +88,29 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+let btnOffert = document.querySelectorAll('.btn-offert')
+let btnTeam = document.querySelectorAll('.btn-team')
+
+btnOffert.forEach(btn => {
+    btn.addEventListener('click', () => {
+        let img = btn.parentNode.children[0].firstChild.src
+        console.log(img);
+        document.querySelector('.modal-content-r').classList.add('active')
+        document.querySelector('.modal-img').src = img
+    })
+})
+
+btnTeam.forEach(btn => {
+    btn.addEventListener('click', () => {
+        let img = btn.parentNode.children[0].children[0].src
+        console.log(img);
+        document.querySelector('.modal-content-r').classList.add('active')
+        document.querySelector('.modal-img').src = img
+    })
+})
+
+
+function closeModal() {
+    document.querySelector('.modal-content-r').classList.remove('active')
+}

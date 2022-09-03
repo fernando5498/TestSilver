@@ -460,6 +460,37 @@ button:focus {
   color: #ffb749;
 }
 
+.modal-content-r {
+  width: 100%;
+  position: fixed;
+  height: 100%;
+  background: white;
+  left: -100%;
+  transition: all 600ms;
+  top: 0;
+  z-index: 20;
+  padding: 50px;
+}
+.modal-content-r.active {
+  left: 0;
+}
+
+.modal-img {
+  width: min(500px, 100%);
+}
+
+.close-modal {
+  font-size: 2rem;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  background: transparent;
+  border: none;
+}
+.close-modal:hover {
+  color: #ffb749;
+}
+
 .footer {
   background-color: #014769;
   color: white;
